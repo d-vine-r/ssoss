@@ -24,9 +24,11 @@ interface StatItemProps {
   delay?: number;
   decimalPlaces?: number;
   color?: string;
+  id?: string;
 }
 
 const StatItem = ({
+  id,
   value,
   label,
   icon,
@@ -82,7 +84,11 @@ const StatItem = ({
   );
 };
 
-export default function AboutUs2() {
+interface AboutUs2Props {
+  id?: string;
+}
+
+const AboutUs2 = ({ id }: AboutUs2Props) => {
   const aboutRef = useRef(null);
   const statsRef = useRef(null);
   const timelineRef = useRef(null);
@@ -122,7 +128,7 @@ export default function AboutUs2() {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-24">
+    <section id={id} className="relative w-full overflow-hidden py-16 md:py-24">
       {/* Background pattern */}
       <div className="absolute inset-0 -z-10 opacity-[0.02] dark:opacity-[0.05]">
         <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
@@ -326,3 +332,5 @@ export default function AboutUs2() {
     </section>
   );
 }
+
+export default AboutUs2;

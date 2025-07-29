@@ -13,28 +13,27 @@ export const CardsCompoonent = () => {
         >
             We are beyound just Prints
         </motion.h1>
-        <div className="flex items-center justify-center min-h-screen gap-5 p-6">
-        
-        <CardFlip
-            title="Simplicity"
-            subtitle="Launch your idea in record time"
-            description="We believe publishing a book should be as simple as purchasing fast food."
-        />
-        <CardFlip
-            title="High Quality"
-            subtitle="Launch your idea in record time"
-            description="We have continuously created works that exceed the quality of other publishers."
-        />
-        <CardFlip
-            title="Integrity"
-            subtitle="Launch your idea in record time"
-            description="You can trust that we will do what we promise."
-        />
-        <CardFlip
-            title="Personal Relationships"
-            subtitle="Launch your idea in record time"
-            description="We provide supports teams that directs you through every process."
-        />
+        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center min-h-screen gap-6 md:gap-5 p-4 md:p-6 w-full">
+            <CardFlip
+                title="Simplicity"
+                subtitle="Launch your idea in record time"
+                description="We believe publishing a book should be as simple as purchasing fast food."
+            />
+            <CardFlip
+                title="High Quality"
+                subtitle="Launch your idea in record time"
+                description="We have continuously created works that exceed the quality of other publishers."
+            />
+            <CardFlip
+                title="Integrity"
+                subtitle="Launch your idea in record time"
+                description="You can trust that we will do what we promise."
+            />
+            <CardFlip
+                title="Personal Relationships"
+                subtitle="Launch your idea in record time"
+                description="We provide supports teams that directs you through every process."
+            />
         </div>
     </section>
   );

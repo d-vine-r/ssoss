@@ -1,5 +1,5 @@
 import { Particle } from "@/components/reusables";
-import AboutUs2 from "@/components/reusables/customUi/about";
+import  AboutUs2  from "@/components/reusables/customUi/about";
 import { CardsCompoonent } from "@/components/reusables/customUi/cardflip";
 import ContactUs1 from "@/components/reusables/customUi/contact-us-1";
 import SendSmarter from "@/components/reusables/customUi/sendsmarter";
@@ -8,10 +8,10 @@ export default function Page() {
 	return (
 		<div>
 			<Particle />
-			<AboutUs2/>
+			<AboutUs2 id="about"/>
 			<CardsCompoonent/>
-			<SendSmarter/>
-			<ContactUs1/>
+			<SendSmarter id="work"/>
+			<ContactUs1 id="contact"/>
 		</div>
 	);
 }

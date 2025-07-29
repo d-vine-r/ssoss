@@ -1,9 +1,13 @@
 "use client"
 import { motion } from 'framer-motion'
+import React from 'react';
+interface SendSmarterProps {
+    id?: string;
+}
 
-const SendSmarter = () => {
+const SendSmarter: React.FC<SendSmarterProps> = ({ id }) => {
     return (
-    <section>
+    <section id={id}>
         <div className='bg-[url(/collagge.png)] bg-cover bg-fixed bg-center h-screen grid grid-cols-3 text-white text-4xl font-bold gap-4'>
           <motion.div
             initial={{ 

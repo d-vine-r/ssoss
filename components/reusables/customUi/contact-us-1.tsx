@@ -10,7 +10,11 @@ import { SparklesCore } from '@/components/ui/sparkles';
 import { Label } from '@/components/ui/label';
 import { Check, Loader2 } from 'lucide-react';
 
-export default function ContactUs1() {
+interface ContactUs1Props {
+  id?: string;
+}
+
+const ContactUs1: React.FC<ContactUs1Props> = ({ id }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -43,7 +47,7 @@ export default function ContactUs1() {
   };
 
   return (
-    <section className="bg-background relative w-full overflow-hidden py-16 md:py-24">
+    <section id='contact' className="bg-background relative w-full overflow-hidden py-16 md:py-24">
       <div
         className="absolute top-0 left-0 h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]"
         style={{
@@ -200,4 +204,6 @@ export default function ContactUs1() {
       </div>
     </section>
   );
-}
+};
+
+export default ContactUs1;

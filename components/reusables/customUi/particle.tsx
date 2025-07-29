@@ -133,8 +133,8 @@ export default function Component() {
 		function animate() {
 			if (!ctx || !canvas) return;
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
-			ctx.fillStyle = theme === "dark" ? "black" : "white";
-			ctx.fillRect(0, 0, canvas.width, canvas.height);
+			// Transparent background
+			// No fillRect, so canvas stays transparent
 
 			const { x: mouseX, y: mouseY } = mousePositionRef.current;
 			const maxDistance = 240;
@@ -240,19 +240,23 @@ export default function Component() {
 
 	return (
 		<div>
-			
-			<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-background">
+			<Vortex
+			 backgroundColor="black"
+			 className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
+				<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-transparent">
 				
-				<div className="absolute top-4 right-4 z-20">
-					<ThemeToggle />
-					
+					<div className="absolute top-4 right-4 z-20">
+						<ThemeToggle />
+						
+					</div>
+					<canvas
+						ref={canvasRef}
+						className="w-full h-full absolute top-0 left-0 bg-transparent touch-none"
+						aria-label="Interactive particle effect spelling out SOS"
+					/>
 				</div>
-				<canvas
-					ref={canvasRef}
-					className="w-full h-full absolute top-0 left-0 touch-none"
-					aria-label="Interactive particle effect spelling out SOS"
-				/>
-			</div>
+			</Vortex>
+			
 			{/* <div className="flex justify-center items-center mt-4">
 				<p className="text-lg font-semibold text-gray-800 dark:text-gray-200">Publications</p>
 			</div> */}
