@@ -240,9 +240,6 @@ export default function Component() {
 
 	return (
 		<div>
-			<Vortex
-			 backgroundColor="black"
-			 className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
 				<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-transparent">
 				
 					<div className="absolute top-4 right-4 z-20">
@@ -255,7 +252,6 @@ export default function Component() {
 						aria-label="Interactive particle effect spelling out SOS"
 					/>
 				</div>
-			</Vortex>
 			
 			{/* <div className="flex justify-center items-center mt-4">
 				<p className="text-lg font-semibold text-gray-800 dark:text-gray-200">Publications</p>
