@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { Vortex } from "@/components/ui/vortex";
 
 export default function Component() {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -239,9 +240,12 @@ export default function Component() {
 
 	return (
 		<div>
+			
 			<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-background">
+				
 				<div className="absolute top-4 right-4 z-20">
 					<ThemeToggle />
+					
 				</div>
 				<canvas
 					ref={canvasRef}
