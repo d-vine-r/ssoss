@@ -11,7 +11,7 @@
  */
 
 import { cn } from '@/lib/utils';
-import { ArrowRight, Code2, Copy, Rocket, Zap } from 'lucide-react';
+import { ArrowRight, Code2, Rocket, Zap } from 'lucide-react';
 import { useState } from 'react';
 
 export interface CardFlipProps {
@@ -25,12 +25,6 @@ export default function CardFlip({
   title = 'Build MVPs Fast',
   subtitle = 'Launch your idea in record time',
   description = 'Copy, paste, customize—and launch your MVP faster than ever with our developer-first component library.',
-  features = [
-    'Copy & Paste Ready',
-    'Developer-First',
-    'MVP Optimized',
-    'Zero Setup Required',
-  ],
 }: CardFlipProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 

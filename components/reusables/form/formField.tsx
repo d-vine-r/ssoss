@@ -20,7 +20,7 @@ interface FormFieldProps {
 	required?: boolean;
 	minLen?: number;
 	maxLen?: number;
-	value?: any;
+	value?: number;
 	disabled?: boolean;
 }
 
@@ -49,7 +49,7 @@ const FormField: React.FC<FormFieldProps> = ({ label, htmlFor, type, id, isInval
 				minLength={minLen}
 				maxLength={maxLen}
 				disabled={disabled}
-				value={value}
+				value={value !== undefined ? String(value) : undefined}
 				onKeyDown={(e) => {
 					if (e.key === "Enter") {
 						e.preventDefault(); // Prevent the default Enter key behavior

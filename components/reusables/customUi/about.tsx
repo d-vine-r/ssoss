@@ -9,8 +9,6 @@ import { cn } from '@/lib/utils';
 import {
   Users,
   Award,
-  Briefcase,
-  Code,
   Sparkles,
   Building,
   LineChart,
@@ -33,7 +31,6 @@ const StatItem = ({
   label,
   icon,
   delay = 0,
-  decimalPlaces = 0,
   color = 'from-primary to-primary/70',
 }: StatItemProps) => {
   const ref = useRef(null);
@@ -100,7 +97,6 @@ export default function AboutUs2() {
       icon: <Users className="h-5 w-5" />,
       delay: 0,
       color: 'from-[#EB268F] to-[#F58FC5]',
-      decimalPlaces: 0,
     },
     {
       value: 15,
@@ -108,7 +104,6 @@ export default function AboutUs2() {
       icon: <Clock className="h-5 w-5" />,
       delay: 0.1,
       color: 'from-[#00b0f0] to-[#47ceff]',
-      decimalPlaces: 0,
     },
     {
       value: 10,
@@ -116,7 +111,6 @@ export default function AboutUs2() {
       icon: <CheckCircle className="h-5 w-5" />,
       delay: 0.2,
       color: 'from-[#EB268F] to-[#F58FC5]',
-      decimalPlaces: 0,
     },
     {
       value: 3,
@@ -124,7 +118,6 @@ export default function AboutUs2() {
       icon: <Award className="h-5 w-5" />,
       delay: 0.3,
       color: 'from-[#00b0f0] to-[#47ceff]',
-      decimalPlaces: 0,
     },
   ];
 
@@ -161,13 +154,8 @@ export default function AboutUs2() {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="mb-4 flex justify-center"
           >
-            {/* <Badge
-              variant="outline"
-              className="border-primary/20 bg-primary/5 rounded-full px-4 py-1 text-sm font-medium"
-            >
               <Sparkles className="text-primary mr-1 h-3.5 w-3.5" />
               About Us
-            </Badge> */}
           </motion.div>
 
           <motion.h1
@@ -199,7 +187,6 @@ export default function AboutUs2() {
                 label={stat.label}
                 icon={stat.icon}
                 delay={stat.delay || index * 0.1}
-                decimalPlaces={stat.decimalPlaces}
                 color={stat.color}
               />
             ))}
@@ -262,7 +249,7 @@ export default function AboutUs2() {
               <Building className="h-5 w-5" />
             </div>
             <p className="text-muted-foreground text-base leading-relaxed">
-              The success of SOS Publication's Book Printing is directly related to our ability to accept manuscripts straight from client's desktop publishing programs, proof the book, select book publishing options and publish the book quickly and affordably directly from our large book publishing facility - all from the ease of your home or office computer
+              The success of SOS Publication&apos;s Book Printing is directly related to our ability to accept manuscripts straight from client&apos;s desktop publishing programs, proof the book, select book publishing options and publish the book quickly and affordably directly from our large book publishing facility - all from the ease of your home or office computer
             </p>
           </motion.div>
         </div>
