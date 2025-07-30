@@ -170,7 +170,7 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
             transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
             className="from-foreground to-foreground/70 bg-gradient-to-b bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl"
           >
-            About Our Company
+            About Us
           </motion.h1>
 
           <motion.p

@@ -240,12 +240,8 @@ export default function Component() {
 
 	return (
 		<div>
-				<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-transparent">
+				<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-purple-900">
 				
-					<div className="absolute top-4 right-4 z-20">
-						<ThemeToggle />
-						
-					</div>
 					<canvas
 						ref={canvasRef}
 						className="w-full h-full absolute top-0 left-0 bg-transparent touch-none"
