@@ -14,7 +14,7 @@ export default function Page() {
 				<Testimonials/>
 			</div>
 			<SendSmarter id="work"/>
-			<WaitlistPage/>
+			{/* <WaitlistPage/> */}
 		</div>
 	);
 }

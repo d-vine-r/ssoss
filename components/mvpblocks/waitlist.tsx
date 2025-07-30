@@ -231,7 +231,7 @@ export default function WaitlistPage() {
               <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Books
               </Link>
-              <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="/ministry" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Ministry
               </Link>
               <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import { Header } from "@/components/reusables";
+import WaitlistPage from "@/components/mvpblocks/waitlist";
 
 export const metadata: Metadata = {
 	title: "Sam O. Salau",
@@ -42,6 +43,7 @@ export default function RootLayout({
 					/>
 					<Header />
 					<MaxWidthWrapper>{children}</MaxWidthWrapper>
+					<WaitlistPage/>
 
 					<Toaster
 						position="top-right"
