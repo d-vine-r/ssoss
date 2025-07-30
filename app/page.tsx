@@ -1,4 +1,5 @@
 import Testimonials from "@/components/mvpblocks/testimonials-marquee";
+import WaitlistPage from "@/components/mvpblocks/waitlist";
 import { Particle } from "@/components/reusables";
 import  AboutUs2  from "@/components/reusables/customUi/about";
 import ContactUs1 from "@/components/reusables/customUi/contact-us-1";
@@ -9,11 +10,11 @@ export default function Page() {
 		<div>
 			<Particle />
 			<AboutUs2 id="about"/>
-			<div className="flex place-items-center justify-self-center">
+			<div className="flex place-items-center justify-center">
 				<Testimonials/>
 			</div>
 			<SendSmarter id="work"/>
-			<ContactUs1 id="contact"/>
+			<WaitlistPage/>
 		</div>
 	);
 }

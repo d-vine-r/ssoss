@@ -24,10 +24,11 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	return (
-		<html
-			lang="en"
-			suppressHydrationWarning>
+  return (
+	<html
+	  lang="en"
+	  suppressHydrationWarning
+	  className="dark">
 			<body className={cn("m-auto min-h-screen bg-background bg-center bg-no-repeat scroll-smooth antialiased")}>
 				<ThemeProvider
 					attribute="class"
