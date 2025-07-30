@@ -2,8 +2,8 @@
 
 import { useRef, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { Vortex } from "@/components/ui/vortex";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Component() {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -240,13 +240,25 @@ export default function Component() {
 
 	return (
 		<div>
-				<div className="relative w-full h-dvh flex flex-col items-center justify-center bg-purple-900">
-				
-					<canvas
+			
+				<div className="w-full h-max flex flex-col items-center justify-center bg-[#1E0A2F]">
+					<Image src={"/chc.jpg"} alt="Background Image" fill className="object-cover opacity-20" />
+					<motion.h1
+            		initial={{ opacity: 0, y: 20 }}
+            		animate={{ opacity: 1, y: 0 }}
+            		transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+            		className="from-foreground to-foreground/70 bg-gradient-to-b bg-clip-text text-4xl font-bold tracking-tight text-transparent absolute top-64 sm:text-5xl"
+          				>
+            		Hi I'm
+          			</motion.h1>
+					<div className="relative w-full h-dvh flex flex-col items-center justify-center">
+						<canvas
 						ref={canvasRef}
 						className="w-full h-full absolute top-0 left-0 bg-transparent touch-none"
-						aria-label="Interactive particle effect spelling out SOS"
-					/>
+						aria-label="Interactive particle effect spelling out SOS"/>
+						<p className="absolute top-156 text-center font-semibold text-3xl">Sam O. Salau <br />Personal Development Coach | Author | Entrepreneur</p>
+					</div>
+					
 				</div>
 			
 			{/* <div className="flex justify-center items-center mt-4">

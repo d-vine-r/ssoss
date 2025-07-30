@@ -9,12 +9,10 @@ import { cn } from '@/lib/utils';
 import {
   Users,
   Award,
-  Sparkles,
   Building,
-  LineChart,
+  UserRound,
   CheckCircle,
   Clock,
-  Zap,
 } from 'lucide-react';
 
 interface StatItemProps {
@@ -154,23 +152,13 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
       <div className="relative z-10 container mx-auto max-w-6xl px-4 md:px-6">
         {/* Header Section with Badge */}
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="mb-4 flex justify-center"
-          >
-              <Sparkles className="text-primary mr-1 h-3.5 w-3.5" />
-              About Us
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
             className="from-foreground to-foreground/70 bg-gradient-to-b bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl"
           >
-            About Us
+            About Me
           </motion.h1>
 
           <motion.p
@@ -210,7 +198,7 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
               transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
               className="relative space-y-6"
             >
-              <div className="from-primary/80 to-primary/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-lg">
+              {/* <div className="from-primary/80 to-primary/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-lg">
                 <Zap className="h-6 w-6" />
               </div>
 
@@ -241,9 +229,9 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
                 To be the leading provider of transformative digital
                 experiences, recognized globally for our commitment to
                 excellence, innovation, and client success.
-              </p>
+              </p>*/}
             </motion.div>
-          </div>
+          </div> 
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -252,15 +240,15 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
             className="mt-16 flex items-start gap-4"
           >
             <div className="from-primary/20 to-primary/5 text-primary inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br">
-              <Building className="h-5 w-5" />
+              <UserRound className="h-5 w-5" />
             </div>
             <p className="text-muted-foreground text-base leading-relaxed">
-              The success of SOS Publication&apos;s Book Printing is directly related to our ability to accept manuscripts straight from client&apos;s desktop publishing programs, proof the book, select book publishing options and publish the book quickly and affordably directly from our large book publishing facility - all from the ease of your home or office computer
+              Sam O Salau is a Personal Development Coach who works with clients in order to develop strategies to build human capital and improve their individual life, thereby improving the quality of service which they deliver to their respective organizations and creating more values.
             </p>
           </motion.div>
         </div>
 
-        {/* Timeline Section */}
+        {/* Timeline Section
         <div ref={timelineRef} className="relative mx-auto max-w-4xl">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -327,7 +315,7 @@ const AboutUs2 = ({ id }: AboutUs2Props) => {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

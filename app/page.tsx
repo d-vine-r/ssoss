@@ -1,6 +1,6 @@
+import Testimonials from "@/components/mvpblocks/testimonials-marquee";
 import { Particle } from "@/components/reusables";
 import  AboutUs2  from "@/components/reusables/customUi/about";
-import { CardsCompoonent } from "@/components/reusables/customUi/cardflip";
 import ContactUs1 from "@/components/reusables/customUi/contact-us-1";
 import SendSmarter from "@/components/reusables/customUi/sendsmarter";
 
@@ -9,7 +9,9 @@ export default function Page() {
 		<div>
 			<Particle />
 			<AboutUs2 id="about"/>
-			<CardsCompoonent/>
+			<div className="flex place-items-center justify-self-center">
+				<Testimonials/>
+			</div>
 			<SendSmarter id="work"/>
 			<ContactUs1 id="contact"/>
 		</div>

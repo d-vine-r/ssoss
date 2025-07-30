@@ -1,11 +1,20 @@
+import Image from "next/image";
 import React from "react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const Header = () => {
 	return (
-	<section className="h-20 flex items-center justify-around px-4 backdrop-blur-2xl sticky z-2">
-		<a href="#about" className="cursor-pointer hover:underline">About</a>
-		<a href="#bookstore" className="cursor-pointer hover:underline">BookStore</a>
-		<a href="#contact" className="cursor-pointer hover:underline">Contact</a>
+	<section className="h-20 flex backdrop-blur justify-center items-center w-full fixed top-0 shadow-md px-4 z-50">
+		<div className="w-full flex flex-end">
+			<h1 className="p-4 w-full text-2xl font-semibold tracking-tighter">Sam O. Salau</h1>
+		</div>
+		<div className="justify-center-safe items-center flex w-max bg-transparent text-white">
+			<a href="#about" className="cursor-pointer px-8 hover:underline">About</a>
+			<a href="#bookstore" className="cursor-pointer px-8 hover:underline">Ministry</a>
+			<a href="#contact" className="cursor-pointer px-8 hover:underline">Contact</a>
+		</div>
+		<div className="p-4 items-center"></div>
+		<ThemeToggle/>
 	</section>
 	)
 };

@@ -7,8 +7,8 @@ interface SendSmarterProps {
 
 const SendSmarter: React.FC<SendSmarterProps> = ({ id }) => {
     return (
-    <section id={id}>
-        <div className='bg-[url(/collagge.png)] bg-cover bg-fixed bg-center h-screen grid grid-cols-3 text-white text-4xl font-bold gap-4'>
+    <section id={id} className='bg-[url(/collagggere.jpg)] bg-cover bg-fixed bg-center '>
+        <div className='bg-[#281838]/30 backdrop-blur-[2px] z-12 h-screen grid grid-cols-3 text-white text-4xl font-bold gap-4'>
           <motion.div
             initial={{ 
               opacity:0,
@@ -19,8 +19,8 @@ const SendSmarter: React.FC<SendSmarterProps> = ({ id }) => {
               x: 100,
             }}
             transition={{ duration: 0.9, delay: 0.5 }}
-           className='p-[32px] col-span-2 text-[12rem] text-center text-black place-self-start'>
-            Our
+           className='p-[32px] col-span-2 text-[12rem] text-center  place-self-start'>
+            My
           </motion.div>
           <div></div>
           <div></div>
@@ -35,8 +35,8 @@ const SendSmarter: React.FC<SendSmarterProps> = ({ id }) => {
               x: -100,
             }}
             transition={{ duration: 0.9, delay: 0.5 }}
-           className='p-[32px] grid-row-2 text-[12rem] text-center text-black place-self-end'>
-            Work
+           className='p-[32px] grid-row-2 text-[12rem] text-center place-self-end'>
+            Books
           </motion.div>
         </div>
     </section>
