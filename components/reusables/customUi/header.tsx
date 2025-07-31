@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
 	return (
-	<section className="h-20 flex backdrop-blur justify-center items-center w-full fixed top-0 shadow-md px-4 z-50">
+	<section className="h-20 flex backdrop-blur justify-center items-center w-full max-w-screen fixed top-0 shadow-md px-4 z-50">
 		<div className="w-full flex flex-end">
 			<Link href={'/'} className="cursor-pointer">
 			<h1 className="p-4 w-full text-2xl font-semibold tracking-tighter">Sam O. Salau</h1></Link>

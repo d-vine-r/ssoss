@@ -137,7 +137,7 @@ export default function WaitlistPage() {
                   className="group text-primary-foreground focus:ring-primary/50 relative overflow-hidden rounded-xl bg-gradient-to-b from-[#1E0A2F] to-[#29146D] px-8 py-4 font-semibold text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] transition-all duration-300 hover:shadow-[0_0_20px_rgba(236,72,153,0.4)] focus:ring-2 focus:outline-none active:scale-95 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
-                    {isSubmitting ? 'Joining...' : 'Join Waitlist'}
+                    {isSubmitting ? 'Joining...' : 'Join'}
                     <Sparkles className="h-4 w-4 transition-all duration-300 group-hover:rotate-12" />
                   </span>
                   <span className="to-primary absolute inset-0 z-0 bg-gradient-to-r from-rose-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>

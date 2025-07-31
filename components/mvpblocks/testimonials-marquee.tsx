@@ -213,7 +213,7 @@ export default function Testimonials() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-foreground mb-4 text-center text-4xl leading-[1.2] font-bold tracking-tighter md:text-5xl">
-          What Other Readers Are Saying
+          What My Readers Are Saying
         </h2>
         <h3 className="text-muted-foreground mx-auto mb-8 max-w-lg text-center text-lg font-medium tracking-tight text-balance">
           Don&apos;t just take our word for it. Here&apos;s what{' '}

@@ -7,7 +7,7 @@ import SendSmarter from "@/components/reusables/customUi/sendsmarter";
 
 export default function Page() {
 	return (
-		<div>
+		<div className="w-full overflow-x-hidden">
 			<Particle />
 			<AboutUs2 id="about"/>
 			<div className="flex place-items-center justify-center">

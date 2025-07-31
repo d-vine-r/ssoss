@@ -241,13 +241,13 @@ export default function Component() {
 	return (
 		<div>
 			
-				<div className="w-full h-max flex flex-col items-center justify-center bg-[#1E0A2F]">
-					<Image src={"/chc.jpg"} alt="Background Image" fill className="object-cover opacity-20" />
+				<div className="max-w-screen h-screen flex flex-col items-center justify-center bg-[#1E0A2F]">
+					<Image src={isMobile ? "/sam.png" : "/chc.jpg"} alt="Background Image" fill className="object-cover w-full opacity-20" />
 					<motion.h1
             		initial={{ opacity: 0, y: 20 }}
             		animate={{ opacity: 1, y: 0 }}
             		transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
-            		className="from-foreground to-foreground/70 bg-gradient-to-b bg-clip-text text-4xl font-bold tracking-tight text-transparent absolute top-64 sm:text-5xl"
+            		className="from-foreground to-foreground/70 bg-gradient-to-b bg-clip-text text-4xl font-bold tracking-tight text-transparent absolute top-48 sm:text-5xl"
           				>
             		Hi I'm
           			</motion.h1>
@@ -256,7 +256,11 @@ export default function Component() {
 						ref={canvasRef}
 						className="w-full h-full absolute top-0 left-0 bg-transparent touch-none"
 						aria-label="Interactive particle effect spelling out SOS"/>
-						<p className="absolute top-156 text-center font-semibold text-3xl">Sam O. Salau <br />Personal Development Coach | Author | Entrepreneur</p>
+						<motion.p
+						initial={{ opacity: 0, y: 20 }}
+            			animate={{ opacity: 1, y: 0 }}
+            			transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+					 	className="absolute top-128 text-center font-semibold text-3xl">Sam O. Salau <br />Personal Development Coach | Author | Entrepreneur</motion.p>
 					</div>
 					
 				</div>
