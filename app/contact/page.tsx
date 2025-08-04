@@ -52,8 +52,8 @@ export default function Contact() {
               </span>
             </h1>
             <p className="text-xl text-purple-100/80 max-w-3xl mx-auto leading-relaxed">
-              Whether you're a reader, fellow writer, or someone who believes in the magic of storytelling, I'd love to
-              hear from you. Every message is a new story waiting to unfold.
+              Anything from comments to questions, I read every message personally and try to respond within 48 hours.
+              Your thoughts matter to me, and I look forward to hearing from you!
             </p>
           </div>
         </section>

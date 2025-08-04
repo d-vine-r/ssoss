@@ -12,7 +12,7 @@ const Header = () => {
 		</div>
 		<div className="justify-center-safe items-center flex w-max bg-transparent text-white">
 			<a href="/about" className="cursor-pointer px-8 hover:underline">About</a>
-			<a href="#bookstore" className="cursor-pointer px-8 hover:underline">Ministry</a>
+			<a href="/ministries" className="cursor-pointer px-8 hover:underline">Ministry</a>
 			<a href="/contact" className="cursor-pointer px-8 hover:underline">Contact</a>
 		</div>
 		<div className="p-4 items-center"></div>
